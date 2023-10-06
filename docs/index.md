@@ -26,32 +26,202 @@
 
 
 # Autores
+Kauã Paixão - 32349351
 
-* Aluno 1
-* Aluno 2
-* Aluno 3
-* Aluno 
-* Aluno 5
-* Aluno 6
-* Aluno 7
-* Aluno 8
+Rodrigo Graziani - 32339143
 
+Yuri Sanches - 32088541
 
 # Descrição do projeto
 
 *&lt;Introdução do projeto&gt;*
 
 # Análise de requisitos funcionais e não-funcionais
-*&lt;Descrição dos requisitos&gt;*
+Projeto 1: Sistema de Software para Atendimento do Pedido e Localização da Fábrica da Pizza
 
+Requisitos Funcionais:
+
+1. Recebimento de Pedidos.
+2. Identificação da Localização do Cliente.
+3. Integração com GPS.
+4. Estimativa de Tempo de Entrega.
+
+Requisitos Não Funcionais:
+
+1. Desempenho ágil.
+2. Escalabilidade para atender a picos de demanda.
+3. Disponibilidade 24/7.
+4. Segurança dos dados do cliente.
+
+Projeto 2: Sistema de Software para Suportar Operações da Fábrica de Pizzas
+
+Requisitos Funcionais:
+
+1. Gerenciamento de Pedidos.
+2. Priorização de Pedidos.
+3. Integração com o Sistema de Entrega.
+4. Monitoramento de Tempo.
+
+Requisitos Não Funcionais:
+
+1. Eficiência operacional.
+2. Confiabilidade e ausência de erros.
+3. Integração suave com tecnologias existentes.
+4. Facilidade de uso para os funcionários.
 # Diagrama de casos de uso
 
-*&lt;Diagrama para visualizar o comportamento dos atores&gt;*
+
 
 # Descrição dos casos de uso
 
-*&lt;Descrição do comportamento entre os atores/resquisitos&gt;*
 
+Descrição Detalhada dos Casos de Uso:
+
+1. Fazer Pedido:
+   - Ator Principal: Cliente
+   - Pré-condições:
+     - O cliente deve estar logado no sistema.
+     - O cliente deve ter acesso ao menu de opções.
+   - Pós-condições:
+     - O pedido é registrado no sistema.
+   - Requisitos:
+     - O sistema deve exibir um menu atualizado com opções de pizzas.
+   - Fluxo Básico:
+     1. O cliente acessa o menu de opções.
+     2. O cliente escolhe uma pizza do menu.
+     3. O cliente seleciona o tamanho desejado para a pizza.
+     4. O cliente adiciona a pizza ao carrinho.
+     5. O cliente confirma o pedido.
+
+2. Personalizar Pedido:
+   - Ator Principal: Cliente
+   - Pré-condições:
+     - O cliente deve ter selecionado uma pizza.
+   - Pós-condições:
+     - As personalizações são aplicadas ao pedido.
+   - Requisitos:
+     - O sistema deve permitir que o cliente escolha os ingredientes e as opções de personalização.
+   - Fluxo Básico:
+     1. O cliente escolhe a opção de personalizar a pizza.
+     2. O cliente seleciona os ingredientes e opções desejados.
+     3. O cliente confirma as personalizações.
+
+3. Cancelar Pedido:
+   - Ator Principal: Cliente
+   - Pré-condições:
+     - O cliente deve ter um pedido em processamento.
+   - Pós-condições:
+     - O pedido é cancelado e removido do sistema.
+   - Requisitos:
+     - O sistema deve permitir que o cliente cancele o pedido antes do início da preparação.
+   - Fluxo Básico:
+     1. O cliente acessa a seção de pedidos.
+     2. O cliente seleciona o pedido que deseja cancelar.
+     3. O cliente confirma o cancelamento do pedido.
+
+4. Efetuar Pagamento:
+   - Ator Principal: Cliente
+   - Pré-condições:
+     - O cliente deve ter um pedido pronto para pagamento.
+   - Pós-condições:
+     - O pagamento é efetuado e o pedido é confirmado.
+   - Requisitos:
+     - O sistema deve oferecer diferentes opções de pagamento.
+   - Fluxo Básico:
+     1. O cliente escolhe a opção de pagamento desejada.
+     2. O cliente fornece as informações de pagamento necessárias.
+     3. O sistema processa o pagamento.
+
+5. Ativar Localização:
+   - Ator Principal: Cliente
+   - Pré-condições:
+     - O cliente deve permitir o acesso à sua localização no dispositivo.
+   - Pós-condições:
+     - A localização do cliente está disponível para o sistema.
+   - Requisitos:
+     - O sistema deve solicitar permissão para acessar a localização do dispositivo.
+   - Fluxo Básico:
+     1. O cliente ativa a funcionalidade de localização em seu dispositivo.
+     2. O sistema obtém a localização atual do cliente.
+
+6. Identificar Localização do Cliente:
+   - Ator Principal: Geolocalizador
+   - Pré-condições: A localização do cliente deve estar disponível.
+   - Pós-condições:
+     - A localização do cliente é identificada e disponível para uso no sistema.
+   - Requisitos:
+     - O sistema deve utilizar APIs ou funcionalidades do dispositivo para obter a localização do cliente.
+   - Fluxo Básico:
+     1. O sistema obtém as informações de localização do dispositivo do cliente.
+
+7. Encontrar Fábricas de Pizzas Mais Próximas:
+   - Ator Principal: Geolocalizador
+   - Pré-condições: A localização do cliente deve estar identificada.
+   - Pós-condições:
+     - As fábricas de pizzas mais próximas são identificadas para processamento do pedido.
+   - Requisitos:
+     - O sistema deve ter um banco de dados atualizado com as localizações das fábricas de pizzas.
+   - Fluxo Básico:
+     1. O sistema utiliza a localização do cliente para identificar as fábricas de pizzas mais próximas.
+
+8. Receber Chamado:
+   - Ator Principal: Funcionário Pizza-Express
+   - Pré-condições:
+     - O pedido do cliente deve ter sido validado e encaminhado para preparação.
+   - Pós-condições:
+     - O pedido é recebido pelo funcionário para preparação.
+   - Requisitos:
+     - O sistema deve notificar os funcionários sobre os novos pedidos recebidos.
+   - Fluxo Básico:
+     1. O sistema notifica os funcionários sobre um novo pedido recebido.
+
+9. Validar Pedido:
+   - Ator Principal: Funcionário Pizza-Express
+   - Pré-condições:
+     - O pedido deve ter sido recebido pelo funcionário.
+   - Pós-condições:
+     - O pedido é validado e pronto para preparação.
+   - Requisitos:
+     - O sistema deve apresentar todas as informações do pedido ao funcionário para validação.
+   - Fluxo Básico:
+     1. O funcionário revisa o pedido para garantir que todas as informações estejam corretas e completas.
+
+10. Preparar Pedido:
+    - Ator Principal: Funcionário Pizza-Express
+    - Pré-condições:
+      - O pedido deve ter sido validado pelo funcionário.
+    - Pós-condições:
+      - O pedido é preparado e pronto para entrega.
+    - Requisitos:
+      - O sistema deve apresentar as instruções de preparação para o pedido ao funcionário.
+    - Fluxo Básico:
+      1. O funcionário inicia a preparação da pizza de acordo com as instruções do pedido.
+
+11. Finalizar Entrega:
+    - Ator Principal: Entregador
+    - Pré-condições:
+     
+
+ - O pedido deve estar preparado e pronto para entrega.
+    - Pós-condições:
+      - O pedido é entregue ao cliente.
+    - Requisitos:
+      - O sistema deve permitir que o funcionário de entrega atualize o status de entrega.
+    - Fluxo Básico:
+      1. O funcionário de entrega entrega a pizza ao cliente.
+      2. O sistema atualiza o status do pedido para entregue.
+
+12. Logar no Sistema:
+    - Ator Principal: Funcionário Pizza-Express
+    - Pré-condições:
+      - O funcionário deve ter um login e senha válidos.
+    - Pós-condições:
+      - O funcionário está autenticado no sistema e pode acessar as funcionalidades.
+    - Requisitos:
+      - O sistema deve garantir a segurança e autenticidade das credenciais de login.
+    - Fluxo Básico:
+      1. O funcionário insere suas credenciais de login (usuário e senha).
+      2. O sistema autentica as credenciais e permite o acesso.
 # Diagrama de sequencia
 
 *&lt;Diagrama de ordem e interação dos objetos&gt;*
