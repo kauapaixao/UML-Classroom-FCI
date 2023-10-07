@@ -243,7 +243,7 @@ Descrição Detalhada dos Casos de Uso:
       2. O sistema autentica as credenciais e permite o acesso.
 # Diagrama de sequencia
 
-*&lt;Diagrama de ordem e interação dos objetos&gt;*
+[*&lt;Diagrama de ordem e interação dos objetos&gt;*](https://drive.google.com/file/d/1PcLaR8Faomr9_FZ7KYQ4GoL_Tw3Ooavh/view?pli=1)
 
 # Diagrama de classes
 
