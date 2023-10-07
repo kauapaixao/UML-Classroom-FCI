@@ -91,11 +91,9 @@ Requisitos Não Funcionais:
 4. Facilidade de uso para os funcionários.
 # Diagrama de casos de uso
 
-
+[Diagrama de usos.pdf](https://github.com/profdscrodrigo/UML-Classroom-FCI/files/12836204/Diagrama.de.usos.pdf)
 
 # Descrição dos casos de uso
-
-
 Descrição Detalhada dos Casos de Uso:
 
 1. Fazer Pedido:
