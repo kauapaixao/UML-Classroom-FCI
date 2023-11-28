@@ -247,7 +247,7 @@ Descrição Detalhada dos Casos de Uso:
 
 # Diagrama de classes
 
-*&lt;Diagrama de relacionamento entre classes para os seus atributos e operações&gt;*
+![diagclasse](https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/137851402/05bb0550-abf0-42a8-92cc-daba7f77db9c)
 
 # Diagrama de Componentes
 
