@@ -314,6 +314,4 @@ Justificativas e Benefícios:
 
 Slides de Desenvolvimento de Sistemas I
 
-Tecnologias de IA
-
 StarUML
