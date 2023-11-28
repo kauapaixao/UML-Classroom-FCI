@@ -251,7 +251,7 @@ Descrição Detalhada dos Casos de Uso:
 
 # Diagrama de Componentes
 
-*&lt;Diagrama para exibir a relação estrutural dos componentes de um sistema de software
+![diagcomp](https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/137851402/d9dbdfda-a105-4432-bf95-8c63b2697881)
 
 # Decisões de arquitetura
 
