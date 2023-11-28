@@ -308,7 +308,7 @@ Justificativas e Benefícios:
 
 # Diagrama de implantação
 
-*&lt;Diagrama para exibir o relacionamento de hardware e software no projeto&gt;*
+![diagimp](https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/137851402/3860a22e-954b-4c87-8b58-d32318012d48)
 
 # Referências
 
