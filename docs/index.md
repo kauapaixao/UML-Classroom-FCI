@@ -312,4 +312,6 @@ Justificativas e Benefícios:
 
 # Referências
 
-*&lt;Lista de referências&gt;*
+Slides de Desenvolvimento de Sistemas I
+Tecnologias de IA
+StarUML
