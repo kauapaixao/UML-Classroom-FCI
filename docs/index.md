@@ -255,7 +255,56 @@ Descrição Detalhada dos Casos de Uso:
 
 # Decisões de arquitetura
 
-*&lt;Descrever a infraestrutura escolhida para arquitetura do projeto&gt;*
+Decisão de Arquitetura para Pizza-Express:
+
+1. Microsserviços:
+   - Justificativa: Adote uma arquitetura de microsserviços para dividir a aplicação em componentes independentes, cada um responsável por uma função específica. Isso facilita a manutenção, escalabilidade e implementação de novos recursos de forma modular.
+
+2. Serviço de Pedidos:
+   - Descrição: Implemente um serviço de pedidos responsável pelo registro e gerenciamento de pedidos dos clientes.
+   - Tecnologias: Node.js, Express, MongoDB.
+
+3. Serviço de Localização:
+   - Descrição: Desenvolva um serviço de localização que utilize a geolocalização para encontrar a fábrica de pizza mais próxima do cliente.
+   - Tecnologias: Python, Flask, Redis.
+
+4. Serviço de Entrega:
+   - Descrição: Crie um serviço dedicado para gerenciar a entrega de pedidos, otimizando rotas e fornecendo atualizações em tempo real aos clientes.
+   - Tecnologias: Java, Spring Boot, PostgreSQL.
+
+5. Serviço de Fábrica de Pizzas:
+   - Descrição: Implemente um serviço para operações internas da fábrica, como preparação de pizzas, gestão de estoque e rastreamento interno.
+   - Tecnologias: Ruby on Rails, MySQL.
+
+6. API Gateway:
+   - Descrição: Introduza um API Gateway para gerenciar as solicitações entre os diferentes microsserviços, garantindo segurança e controle de acesso.
+   - Tecnologias: Nginx, Kong.
+
+7. Banco de Dados Distribuído:
+   - Descrição: Utilize um banco de dados distribuído para garantir alta disponibilidade e escalabilidade.
+   - Tecnologias: Cassandra, Amazon DynamoDB.
+
+8. Contêineres e Orquestração:
+   - Descrição: Empregue contêineres (Docker) e orquestração (Kubernetes) para facilitar o empacotamento, implantação e dimensionamento dos serviços.
+
+9. Monitoramento e Logging:
+   - Descrição: Implemente ferramentas de monitoramento e logging para acompanhar o desempenho, identificar problemas rapidamente e melhorar continuamente o sistema.
+   - Tecnologias: Prometheus, Grafana, ELK Stack.
+
+10. Comunicação Assíncrona:
+    - Descrição: Use mensageria assíncrona (por exemplo, RabbitMQ) para desacoplar serviços e garantir uma comunicação eficiente.
+
+Justificativas e Benefícios:
+
+- Escalabilidade: A arquitetura distribuída permite escalar componentes individualmente, atendendo ao aumento da demanda.
+  
+- Resiliência: Microsserviços independentes aumentam a resiliência, já que falhas em um serviço não afetam diretamente os outros.
+
+- Agilidade: A abordagem de microsserviços permite atualizações e implementações independentes, promovendo agilidade no desenvolvimento.
+
+- Eficiência na Entrega: A separação de serviços especializados, como localização e entrega, otimiza as operações, facilitando o cumprimento do objetivo de entrega em menos de 30 minutos.
+
+- Facilidade de Manutenção: A manutenção e expansão de funcionalidades são mais fáceis com microsserviços, pois cada serviço é gerenciado separadamente.
 
 # Diagrama de implantação
 
